@@ -26,7 +26,7 @@ export default function App() {
         display: "flex", justifyContent: "space-between", alignItems: "center",
       }}>
         <span style={{ fontSize: 10, letterSpacing: "0.18em", textTransform: "uppercase", color: "#444" }}>
-          © 2025 Mohamed Essam
+          © 2026 Mohamed Essam
         </span>
         <span style={{ fontSize: 10, letterSpacing: "0.18em", textTransform: "uppercase", color: "#444" }}>
           Software Engineer — Cairo, Egypt
