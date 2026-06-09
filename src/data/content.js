@@ -5,8 +5,8 @@ export const personal = {
   email: "mohamedessam1112000@gmail.com",
   phone: "+20 120 473 6715",
   phone2: "+20 114 689 1908",
-  linkedin: "https://linkedin.com/in/mohamed-essam",
-  github: "https://github.com/mohamed-essam",
+  linkedin: "https://www.linkedin.com/in/mohamed-essam-0a8a7a2b6/",
+  github: "https://github.com/mo3os",
   summary:
     "Software Engineer with a Bachelor's in Software Engineering and currently pursuing a Master's in Computer Science at Arab Academy for Science and Technology. Experienced in frontend web development and data technologies — Python, Machine Learning. Certified in Ethical Hacking and Cisco Networking (CCNA).",
   languages: ["Arabic — Native", "English — Fluent"],
@@ -78,6 +78,6 @@ export const education = [
 
 export const certificates = [
   { name: "Ethical Hacking Certificate", issuer: "AITB Company", hours: "60 Hours" },
-  { name: "Cisco Certified Network Associate", issuer: "Cisco — CCNA", hours: "60 Hours" },
+  { name: "CCNA", issuer: "CCNA", hours: "60 Hours" },
   { name: "SAP Business Data Cloud", issuer: "SAP", hours: "" },
 ];
