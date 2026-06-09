@@ -22,7 +22,7 @@ export default function Hero() {
         position: "absolute", top: 0, right: 0, width: "40%", height: "100%",
         opacity: photoOpacity, y: photoY, pointerEvents: "none", zIndex: 0,
       }}>
-        <img src="/photo.jpg" alt="Mohamed Essam" style={{
+        <img src="/photo.webp" alt="Mohamed Essam" style={{
           width: "100%", height: "100%", objectFit: "cover", objectPosition: "center top",
           filter: "grayscale(100%) contrast(1.05)",
         }} />
