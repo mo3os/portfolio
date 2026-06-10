@@ -5,25 +5,25 @@ import SectionLabel from "./SectionLabel";
 
 const PROJECT_PHOTOS = {
   "01": [
-    { img: "portfolio/public/dogh2.jpeg", caption: "Map view & route planning" },
-    { img: "portfolio/public/dogh1.jpeg", caption: "Select A Trip" },
-    { img: "portfolio/public/dogh6.jpeg", caption: "Selecting Bus" },
-    { img: "portfolio/public/dogh3.jpeg", caption: "Selecting Class" },
-    { img: "portfolio/public/dogh4.jpeg", caption: "Payment Page" },
-    { img: "portfolio/public/dogh5.jpeg", caption: "After Payment" },
-    { img: "portfolio/public/dogh7.jpeg", caption: "Profile Page" },
+    { img: "/portfolio/public/dogh2.jpeg", caption: "Map view & route planning" },
+    { img: "/portfolio/public/dogh1.jpeg", caption: "Select A Trip" },
+    { img: "/portfolio/public/dogh6.jpeg", caption: "Selecting Bus" },
+    { img: "/portfolio/public/dogh3.jpeg", caption: "Selecting Class" },
+    { img: "/portfolio/public/dogh4.jpeg", caption: "Payment Page" },
+    { img: "/portfolio/public/dogh5.jpeg", caption: "After Payment" },
+    { img: "/portfolio/public/dogh7.jpeg", caption: "Profile Page" },
   ],
   "02": [
-    { img: "portfolio/public/dawar1.png", caption: "Homepage" },
-    { img: "portfolio/public/dawar6.png", caption: "Homepage Recoloring" },
-    { img: "portfolio/public/dawar2.png", caption: "Login Page" },
-    { img: "portfolio/public/dawar3.png", caption: "Cars Category" },
-    { img: "portfolio/public/dawar5.png", caption: "Car Selection" },
-    { img: "portfolio/public/dawar7.png", caption: "Cart Option" },
-    { img: "portfolio/public/dawar4.png", caption: "Checkout Page" },
+    { img: "/portfolio/public/dawar1.png", caption: "Homepage" },
+    { img: "/portfolio/public/dawar6.png", caption: "Homepage Recoloring" },
+    { img: "/portfolio/public/dawar2.png", caption: "Login Page" },
+    { img: "/portfolio/public/dawar3.png", caption: "Cars Category" },
+    { img: "/portfolio/public/dawar5.png", caption: "Car Selection" },
+    { img: "/portfolio/public/dawar7.png", caption: "Cart Option" },
+    { img: "/portfolio/public/dawar4.png", caption: "Checkout Page" },
   ],
   "03": [
-    { img: "portfolio/public/food1.png", caption: "Food Order Panel + Admin Panel" }
+    { img: "/portfolio/public/food1.png", caption: "Food Order Panel + Admin Panel" }
   ],
 };
 
