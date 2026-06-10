@@ -42,17 +42,17 @@ function ProjectRow({ project, index, isActive, onToggle }) {
         transition={{ duration: 0.5, ease: [0.25, 0.46, 0.45, 0.94] }}
         style={{ display: "grid", gridTemplateColumns: "56px 1fr auto", gap: "32px", alignItems: "center", padding: "36px 0" }}
       >
-        <span style={{ fontFamily: "'Space Grotesk', sans-serif", fontSize: 11, letterSpacing: "0.12em", color: "#555" }}>
+        <span style={{ fontFamily: "'Space Grotesk', sans-serif", fontSize: 15, letterSpacing: "0.12em", color: "#afafaf" }}>
           {project.num}
         </span>
         <div>
           <div style={{ display: "flex", alignItems: "baseline", gap: 16, flexWrap: "wrap" }}>
             <h3 style={{ fontFamily: "'Space Grotesk', sans-serif", fontSize: 22, fontWeight: 600 }}>{project.name}</h3>
-            <span style={{ fontSize: 12, color: "#555", letterSpacing: "0.05em" }}>{project.subtitle}</span>
+            <span style={{ fontSize: 14, color: "#949494", letterSpacing: "0.05em" }}>{project.subtitle}</span>
           </div>
         </div>
         <div style={{ display: "flex", alignItems: "center", gap: 20 }}>
-          <span style={{ fontSize: 10, letterSpacing: "0.18em", textTransform: "uppercase", color: "#555" }}>{project.tag}</span>
+          <span style={{ fontSize: 13, letterSpacing: "0.18em", textTransform: "uppercase", color: "#2bff00" }}>{project.tag}</span>
           <motion.div
             animate={{ rotate: isActive ? 45 : 0 }}
             transition={{ duration: 0.3 }}
@@ -74,12 +74,12 @@ function ProjectRow({ project, index, isActive, onToggle }) {
             style={{ overflow: "hidden" }}
           >
             <div style={{ paddingLeft: 88, paddingBottom: 36, display: "flex", flexDirection: "column", gap: 16 }}>
-              <p style={{ fontSize: 14, lineHeight: 1.7, color: "#888", maxWidth: 560 }}>{project.description}</p>
+              <p style={{ fontSize: 15, lineHeight: 1.7, color: "#b1b1b1", maxWidth: 560 }}>{project.description}</p>
               <div style={{ display: "flex", flexWrap: "wrap", gap: 8 }}>
                 {project.tech.map((t) => (
                   <span key={t} style={{
                     fontSize: 10, letterSpacing: "0.15em", textTransform: "uppercase",
-                    border: "1px solid #2a2a2a", padding: "4px 12px", color: "#777",
+                    border: "1px solid #2bff00", padding: "4px 12px", color: "#2bff00",
                   }}>{t}</span>
                 ))}
               </div>

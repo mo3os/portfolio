@@ -23,7 +23,7 @@ export default function Experience() {
         ))}
       </section>
 
-      <section id="certificates" style={{ padding: "100px 48px", borderBottom: "1px solid #1e1e1e" }}>
+      <section id="certificates" style={{ padding: "100px 48px" }}>
         <SectionLabel>Certificates</SectionLabel>
         <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: 2, background: "#1e1e1e", border: "1px solid #1e1e1e" }}>
           {certificates.map((c, i) => (
@@ -43,15 +43,13 @@ function TimelineRow({ period, title, sub, desc, badge, first }) {
     <div style={{
       display: "grid", gridTemplateColumns: "200px 1fr", gap: 48,
       padding: "40px 0",
-      borderTop: first ? "1px solid #1e1e1e" : "none",
-      borderBottom: "1px solid #1e1e1e",
     }}>
-      <span style={{ fontSize: 11, letterSpacing: "0.1em", color: "#555", paddingTop: 4 }}>{period}</span>
+      <span style={{ fontSize: 14, letterSpacing: "0.1em", color: "#c9c9c9", paddingTop: 4 }}>{period}</span>
       <div>
         <h3 style={{ fontFamily: "'Space Grotesk', sans-serif", fontSize: 20, fontWeight: 600, marginBottom: 6 }}>{title}</h3>
-        <p style={{ fontSize: 12, color: "#555", marginBottom: 12 }}>{sub}</p>
+        <p style={{ fontSize: 14, color: "#7e7c7c", marginBottom: 12 }}>{sub}</p>
         {badge && (
-          <span style={{ fontSize: 11, letterSpacing: "0.1em", color: "#666", border: "1px solid #2a2a2a", padding: "3px 12px", display: "inline-block" }}>
+          <span style={{ fontSize: 14, letterSpacing: "0.1em", color: "#48ff00", border: "1px solid #51ff00", padding: "3px 12px", display: "inline-block" }}>
             GPA: {badge}
           </span>
         )}
@@ -76,11 +74,11 @@ function CertCard({ cert }) {
         cursor: "none",
       }}
     >
-      <div style={{ fontFamily: "'Space Grotesk', sans-serif", fontSize: 16, fontWeight: 600, marginBottom: 10, lineHeight: 1.3 }}>
+      <div style={{ fontFamily: "'Space Grotesk', sans-serif", fontSize: 17, fontWeight: 700, marginBottom: 10, lineHeight: 1.3 }}>
         {cert.name}
       </div>
-      <div style={{ fontSize: 12, color: "#555" }}>{cert.issuer}</div>
-      {cert.hours && <div style={{ marginTop: 16, fontSize: 10, letterSpacing: "0.2em", textTransform: "uppercase", color: "#444" }}>{cert.hours}</div>}
+      <div style={{ fontSize: 14, color: "#8b8b8b" }}>{cert.issuer}</div>
+      {cert.hours && <div style={{ marginTop: 16, fontSize: 12, letterSpacing: "0.2em", textTransform: "uppercase", color: "#51ff00" }}>{cert.hours}</div>}
     </div>
   );
 }

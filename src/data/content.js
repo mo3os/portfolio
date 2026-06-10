@@ -42,7 +42,7 @@ export const projects = [
   },
   {
     num: "03",
-    name: "Food Ordering POS",
+    name: "Food Ordering App",
     subtitle: "Desktop Application",
     tag: "Desktop App",
     description:
@@ -79,5 +79,5 @@ export const education = [
 export const certificates = [
   { name: "Ethical Hacking Certificate", issuer: "AITB Company", hours: "60 Hours" },
   { name: "CCNA", issuer: "CCNA", hours: "60 Hours" },
-  { name: "SAP Business Data Cloud", issuer: "SAP", hours: "" },
+  { name: "SAP Business Data Cloud", issuer: "SAP", hours: "10 Hours" },
 ];

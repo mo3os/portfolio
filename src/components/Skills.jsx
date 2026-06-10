@@ -32,7 +32,7 @@ function SkillBlock({ skill }) {
       transition={{ duration: 0.4, ease: [0.25, 0.46, 0.45, 0.94] }}
       style={{ padding: "36px 32px", cursor: "none" }}
     >
-      <div style={{ fontSize: 9, letterSpacing: "0.28em", textTransform: "uppercase", color: "#555", marginBottom: 18 }}>
+      <div style={{ fontSize: 15, letterSpacing: "0.28em", textTransform: "uppercase", color: "#1eff00", marginBottom: 18 }}>
         {skill.category}
       </div>
       <div style={{ display: "flex", flexDirection: "column", gap: 8 }}>
@@ -41,7 +41,7 @@ function SkillBlock({ skill }) {
             <motion.span animate={{ width: hovered ? 16 : 8, background: hovered ? "#fff" : "#333" }}
               transition={{ duration: 0.4 }}
               style={{ display: "inline-block", height: 1 }} />
-            <span style={{ fontSize: 13, fontWeight: 400 }}>{item}</span>
+            <span style={{ fontSize: 15, fontWeight: 500 }}>{item}</span>
           </div>
         ))}
       </div>

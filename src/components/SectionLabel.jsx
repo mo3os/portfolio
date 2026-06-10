@@ -4,8 +4,8 @@ export default function SectionLabel({ children }) {
   return (
     <div style={{
       display: "flex", alignItems: "center", gap: 16,
-      marginBottom: 64, fontSize: 10, letterSpacing: "0.3em",
-      textTransform: "uppercase", color: "#666",
+      marginBottom: 64, fontSize: 15, letterSpacing: "0.3em",
+      textTransform: "uppercase", color: "#d4d4d4", fontWeight:"700"
     }}>
       {children}
       <motion.div

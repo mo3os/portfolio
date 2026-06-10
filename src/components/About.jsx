@@ -8,12 +8,12 @@ export default function About() {
       <SectionLabel>About</SectionLabel>
       <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "80px" }}>
         <FadeIn>
-          <p style={{ fontSize: 20, lineHeight: 1.7, fontWeight: 300, color: "#ccc" }}>
+          <p style={{ fontSize: 22, lineHeight: 1.7, fontWeight: 300, color: "#ccc" }}>
             Software Engineer with a <strong style={{ color: "white", fontWeight: 600 }}>Bachelor's in Software Engineering</strong>{" "}
             and currently pursuing a <strong style={{ color: "white", fontWeight: 600 }}>Master's in Computer Science</strong>{" "}
             at Arab Academy for Science and Technology. Experienced in frontend web development and data technologies.
-            Certified in <strong style={{ color: "white", fontWeight: 600 }}>Ethical Hacking</strong> and{" "}
-            <strong style={{ color: "white", fontWeight: 600 }}>Cisco Networking (CCNA)</strong>.
+            Certified in <strong style={{ color: "limegreen", fontWeight: 600 }}>Ethical Hacking</strong> and{" "}
+            <strong style={{ color: "limegreen", fontWeight: 600 }}>CCNA</strong>.
           </p>
         </FadeIn>
         <FadeIn delay={0.1}>
@@ -23,14 +23,14 @@ export default function About() {
               ["Email", personal.email],
               ["Phone", personal.phone],
               ["Languages", "Arabic (Native) · English (Fluent)"],
-              ["Status", "Open to Opportunities"],
+              ["Status", "Open to Work"],
             ].map(([label, val]) => (
               <div key={label} style={{
-                display: "flex", flexDirection: "column", gap: 5,
-                padding: "20px 0", borderBottom: "1px solid #1e1e1e",
+                display: "flex", flexDirection: "column", gap: 11,
+                padding: "20px 0", borderBottom: "1px solid #2c2c2c",
               }}>
-                <span style={{ fontSize: 9, letterSpacing: "0.28em", textTransform: "uppercase", color: "#555" }}>{label}</span>
-                <span style={{ fontSize: 14, fontWeight: 400 }}>{val}</span>
+                <span style={{ fontSize: 13, letterSpacing: "0.28em", textTransform: "uppercase", color: "#7c7c7c" }}>{label}</span>
+                <span style={{ fontSize: 17, fontWeight: 500 }}>{val}</span>
               </div>
             ))}
           </div>

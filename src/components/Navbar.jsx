@@ -42,7 +42,7 @@ export default function Navbar() {
             fontSize: 13, letterSpacing: "0.25em", textTransform: "uppercase",
             color: "white", background: "none", border: "none", cursor: "none",
           }}
-        >ME</button>
+        >3OS_</button>
 
         <ul style={{ display: "flex", gap: 36, listStyle: "none" }} className="nav-desktop">
           {links.map((l) => (
@@ -124,7 +124,7 @@ function NavLink({ label, onClick }) {
       onMouseLeave={() => setHovered(false)}
       style={{
         background: "none", border: "none", cursor: "none", position: "relative",
-        fontFamily: "'Inter', sans-serif", fontSize: 11, fontWeight: 400,
+        fontFamily: "'Inter', sans-serif", fontSize: 13, fontWeight: 400,
         letterSpacing: "0.18em", textTransform: "uppercase", color: "white", padding: "2px 0",
       }}
     >

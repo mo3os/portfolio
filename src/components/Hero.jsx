@@ -35,6 +35,7 @@ export default function Hero() {
       {/* Name */}
       <div style={{ position: "relative", zIndex: 1, maxWidth: "62%" }}>
         <h1 style={{
+          textShadow: "0 0 20px rgba(0,255,136,.25)",
           fontFamily: "'Space Grotesk', sans-serif", fontWeight: 700,
           fontSize: "clamp(68px, 11vw, 170px)", lineHeight: 0.88,
           letterSpacing: "-0.03em", textTransform: "uppercase",
@@ -67,7 +68,46 @@ export default function Hero() {
           transition={{ duration: 0.6, delay: 1.1 }}
           style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
           <span style={{ fontSize: 12, letterSpacing: "0.22em", textTransform: "uppercase", color: "#777" }}>
-            {personal.title}
+            <div
+  style={{
+    display: "flex",
+    flexDirection: "column",
+    gap: "8px"
+  }}
+>
+  <span
+    style={{
+      color: "#00ff88",
+      fontSize: 12,
+      letterSpacing: "0.25em",
+      textTransform: "uppercase"
+    }}
+  >
+    &gt;  On Duty
+  </span>
+
+  <span
+    style={{
+      fontSize: 12,
+      letterSpacing: "0.22em",
+      textTransform: "uppercase",
+      color: "#aaa"
+    }}
+  >
+    Software Engineer
+  </span>
+
+  <span
+    style={{
+      fontSize: 12,
+      letterSpacing: "0.22em",
+      textTransform: "uppercase",
+      color: "#aaa"
+    }}
+  >
+    Machine Learning • Data Visualization
+  </span>
+</div>
           </span>
           <span style={{ fontSize: 12, letterSpacing: "0.12em", color: "#777" }}>
             Cairo, Egypt
@@ -81,7 +121,7 @@ export default function Hero() {
         style={{
           position: "absolute", bottom: 40, left: 48,
           display: "flex", alignItems: "center", gap: 14,
-          fontSize: 10, letterSpacing: "0.25em", textTransform: "uppercase", color: "#555",
+          fontSize: 13, letterSpacing: "0.25em", textTransform: "uppercase", color: "#3cff00",
         }}>
         <ScrollLine />
         Scroll

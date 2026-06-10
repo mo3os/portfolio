@@ -25,10 +25,10 @@ export default function App() {
         borderTop: "1px solid #1e1e1e",
         display: "flex", justifyContent: "space-between", alignItems: "center",
       }}>
-        <span style={{ fontSize: 10, letterSpacing: "0.18em", textTransform: "uppercase", color: "#444" }}>
+        <span style={{ fontSize: 13, letterSpacing: "0.18em", textTransform: "uppercase", color: "#444" }}>
           © 2026 Mohamed Essam
         </span>
-        <span style={{ fontSize: 10, letterSpacing: "0.18em", textTransform: "uppercase", color: "#444" }}>
+        <span style={{ fontSize: 13, letterSpacing: "0.18em", textTransform: "uppercase", color: "#444" }}>
           Software Engineer — Cairo, Egypt
         </span>
       </footer>
