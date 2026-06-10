@@ -5,25 +5,25 @@ import SectionLabel from "./SectionLabel";
 
 const PROJECT_PHOTOS = {
   "01": [
-    { src: "public/dogh2.jpeg", caption: "Map view & route planning" },
-    { src: "public/dogh1.jpeg", caption: "Select A Trip" },
-    { src: "public/dogh6.jpeg", caption: "Selecting Bus" },
-    { src: "public/dogh3.jpeg", caption: "Selecting Class" },
-    { src: "public/dogh4.jpeg", caption: "Payment Page" },
-    { src: "public/dogh5.jpeg", caption: "After Payment" },
-    { src: "public/dogh7.jpeg", caption: "Profile Page" },
+    { src: "portfolio\public\dogh2.jpeg", caption: "Map view & route planning" },
+    { src: "portfolio\public\dogh1.jpeg", caption: "Select A Trip" },
+    { src: "portfolio\public\dogh6.jpeg", caption: "Selecting Bus" },
+    { src: "portfolio\public\dogh3.jpeg", caption: "Selecting Class" },
+    { src: "portfolio\public\dogh4.jpeg", caption: "Payment Page" },
+    { src: "portfolio\public\dogh5.jpeg", caption: "After Payment" },
+    { src: "portfolio\public\dogh7.jpeg", caption: "Profile Page" },
   ],
   "02": [
-    { src: "public/dawar1.png", caption: "Homepage" },
-    { src: "public/dawar6.png", caption: "Homepage Recoloring" },
-    { src: "public/dawar2.png", caption: "Login Page" },
-    { src: "public/dawar3.png", caption: "Cars Category" },
-    { src: "public/dawar5.png", caption: "Car Selection" },
-    { src: "public/dawar7.png", caption: "Cart Option" },
-    { src: "public/dawar4.png", caption: "Checkout Page" },
+    { src: "portfolio\public\dawar1.png", caption: "Homepage" },
+    { src: "portfolio\public\dawar6.png", caption: "Homepage Recoloring" },
+    { src: "portfolio\public\dawar2.png", caption: "Login Page" },
+    { src: "portfolio\public\dawar3.png", caption: "Cars Category" },
+    { src: "portfolio\public\dawar5.png", caption: "Car Selection" },
+    { src: "portfolio\public\dawar7.png", caption: "Cart Option" },
+    { src: "portfolio\public\dawar4.png", caption: "Checkout Page" },
   ],
   "03": [
-    { src: "public/food1.png", caption: "Food Order Panel + Admin Panel" }
+    { src: "portfolio\public\food1.png", caption: "Food Order Panel + Admin Panel" }
   ],
 };
 
