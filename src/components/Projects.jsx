@@ -6,7 +6,7 @@ import SectionLabel from "./SectionLabel";
 const PROJECT_PHOTOS = {
   "01": [
     { src: "/dogh2.jpeg", caption: "Map view & route planning" },
-    { src: "https://imgur.com/a/FxDslfY", caption: "Select A Trip" },
+    { src: "/dogh1.jpeg", caption: "Select A Trip" },
     { src: "/dogh6.jpeg", caption: "Selecting Bus" },
     { src: "/dogh3.jpeg", caption: "Selecting Class" },
     { src: "/dogh4.jpeg", caption: "Payment Page" },
