@@ -12,6 +12,8 @@ const MOVIES = [
   { title: "The Pursuit of Happyness", year: "2006", genre: "Drama", img: "purs.jpg" },
 ];
 
+
+
 export default function Movies() {
   const trackRef = useRef(null);
   const [isDragging, setIsDragging] = useState(false);
@@ -31,7 +33,18 @@ export default function Movies() {
   const onMouseUp = () => setIsDragging(false);
 
   return (
+    
     <section id="movies" style={{ padding: "100px 0 100px 48px", overflow: "hidden" }}>
+              <h2 style={{
+          fontFamily: "'Space Grotesk', sans-serif",
+          fontSize: "clamp(40px, 6vw, 96px)",
+          fontWeight: 700, letterSpacing: "-0.02em", lineHeight: 1, marginBottom: 56,
+        }}>
+          Entertainment<br />
+          <span style={{ WebkitTextStroke: "1px #ffc814", color: "transparent",
+            textShadow: "0 0 20px rgba(255, 173, 20, 0.3), 0 0 40px rgba(255, 181, 20, 0.15)" }}>Area.</span>
+        </h2>
+
       <div style={{ paddingRight: 48 }}>
         <SectionLabel>Favourite Movies</SectionLabel>
       </div>
@@ -58,8 +71,8 @@ export default function Movies() {
         .movies-track::-webkit-scrollbar { height: 3px; }
         .movies-track::-webkit-scrollbar-track { background: #0a0a0a; }
         .movies-track::-webkit-scrollbar-thumb {
-          background: #39ff14;
-          box-shadow: 0 0 6px #39ff14;
+          background: #ffbb00;
+          box-shadow: 0 0 6px #ffd000;
           border-radius: 2px;
         }
       `}</style>
@@ -83,9 +96,9 @@ function MovieCard({ movie, index }) {
       style={{
         flexShrink: 0, width: 200, height: 300, position: "relative",
         cursor: "none", overflow: "hidden",
-        border: hovered ? "1px solid #39ff14" : "1px solid #1a1a1a",
+        border: hovered ? "1px solid #ffc814" : "1px solid #1a1a1a",
         boxShadow: hovered
-          ? "0 0 18px #39ff14, 0 0 40px rgba(57,255,20,0.25), inset 0 0 20px rgba(57,255,20,0.04)"
+          ? "0 0 18px #ffc814, 0 0 40px rgba(255, 187, 0, 0.25), inset 0 0 20px rgba(255, 231, 20, 0.04)"
           : "none",
         transition: "border-color 0.4s ease, box-shadow 0.4s ease",
         background: "#0a0a0a",
@@ -119,7 +132,7 @@ function MovieCard({ movie, index }) {
             })}
           </svg>
           <span style={{
-            fontFamily: "'Share Tech Mono', monospace", fontSize: 9,
+            fontFamily: "'Share Tech Mono', monospace", fontSize: 10,
             letterSpacing: "0.15em", color: hovered ? "#39ff14" : "#333",
             textShadow: hovered ? "0 0 8px #39ff14" : "none",
             transition: "all 0.4s", textTransform: "uppercase",
@@ -138,20 +151,20 @@ function MovieCard({ movie, index }) {
       }}>
         {/* Neon corner brackets */}
         {hovered && <>
-          <div style={{ position:"absolute", top:8, left:8, width:16, height:1, background:"#39ff14", boxShadow:"0 0 6px #39ff14" }}/>
-          <div style={{ position:"absolute", top:8, left:8, width:1, height:16, background:"#39ff14", boxShadow:"0 0 6px #39ff14" }}/>
-          <div style={{ position:"absolute", top:8, right:8, width:16, height:1, background:"#39ff14", boxShadow:"0 0 6px #39ff14" }}/>
-          <div style={{ position:"absolute", top:8, right:8, width:1, height:16, background:"#39ff14", boxShadow:"0 0 6px #39ff14" }}/>
-          <div style={{ position:"absolute", bottom:8, left:8, width:16, height:1, background:"#39ff14", boxShadow:"0 0 6px #39ff14" }}/>
-          <div style={{ position:"absolute", bottom:8, left:8, width:1, height:16, background:"#39ff14", boxShadow:"0 0 6px #39ff14" }}/>
-          <div style={{ position:"absolute", bottom:8, right:8, width:16, height:1, background:"#39ff14", boxShadow:"0 0 6px #39ff14" }}/>
-          <div style={{ position:"absolute", bottom:8, right:8, width:1, height:16, background:"#39ff14", boxShadow:"0 0 6px #39ff14" }}/>
+          <div style={{ position:"absolute", top:8, left:8, width:16, height:1, background:"#ffc814", boxShadow:"0 0 6px #ffc814" }}/>
+          <div style={{ position:"absolute", top:8, left:8, width:1, height:16, background:"#ffc814", boxShadow:"0 0 6px #ffc814" }}/>
+          <div style={{ position:"absolute", top:8, right:8, width:16, height:1, background:"#ffc814", boxShadow:"0 0 6px #ffc814" }}/>
+          <div style={{ position:"absolute", top:8, right:8, width:1, height:16, background:"#ffc814", boxShadow:"0 0 6px #ffc814" }}/>
+          <div style={{ position:"absolute", bottom:8, left:8, width:16, height:1, background:"#ffc814", boxShadow:"0 0 6px #ffc814" }}/>
+          <div style={{ position:"absolute", bottom:8, left:8, width:1, height:16, background:"#ffc814", boxShadow:"0 0 6px #ffc814" }}/>
+          <div style={{ position:"absolute", bottom:8, right:8, width:16, height:1, background:"#ffc814", boxShadow:"0 0 6px #ffc814" }}/>
+          <div style={{ position:"absolute", bottom:8, right:8, width:1, height:16, background:"#ffc814", boxShadow:"0 0 6px #ffc814" }}/>
         </>}
 
         <span style={{
-          fontFamily: "'Share Tech Mono', monospace", fontSize: 8, letterSpacing: "0.2em",
-          color: hovered ? "#39ff14" : "#555", textTransform: "uppercase", marginBottom: 4,
-          textShadow: hovered ? "0 0 6px #39ff14" : "none", transition: "all 0.4s",
+          fontFamily: "'Share Tech Mono', monospace", fontSize: 9, letterSpacing: "0.2em",
+          color: hovered ? "#ffc814" : "#555", textTransform: "uppercase", marginBottom: 4,
+          textShadow: hovered ? "0 0 6px #ffc814" : "none", transition: "all 0.4s",
         }}>{movie.genre} · {movie.year}</span>
         <span style={{
           fontFamily: "'Space Grotesk', sans-serif", fontSize: 15, fontWeight: 600,

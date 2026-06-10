@@ -90,7 +90,7 @@ function NavLink({ label, onClick }) {
       onMouseEnter={() => setHovered(true)} onMouseLeave={() => setHovered(false)}
       style={{
         background: "none", border: "none", cursor: "none", position: "relative",
-        fontFamily: "'Share Tech Mono', monospace", fontSize: 11, fontWeight: 400,
+        fontFamily: "'Share Tech Mono', monospace", fontSize: 12, fontWeight: 400,
         letterSpacing: "0.18em", textTransform: "uppercase",
         color: hovered ? "#39ff14" : "#ffffff",
         textShadow: hovered ? "0 0 8px #39ff14" : "none",

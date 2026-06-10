@@ -23,6 +23,7 @@ export default function App() {
         <Experience />
         <Movies />
         <Contact />
+        
       </main>
       <footer style={{
         padding: "28px 48px", borderTop: "1px solid #111",
