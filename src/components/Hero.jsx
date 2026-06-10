@@ -65,17 +65,17 @@ export default function Hero() {
         }} />
 
         <img
-          src="/IMG_5973-Photoroom_png-Photoroom.png"
+          src="/photo.webp"
           alt="Mohamed Essam"
           style={{
             width: "100%",
-            height: "100%",
-            objectFit: "contain",
+            height: "90%",
+            objectFit: "cover",
             objectPosition: "bottom center",
-            /* no grayscale — let the blue suit show against the dark bg */
             filter: "brightness(0.92) contrast(1.05) drop-shadow(0 0 28px rgba(80,255,32,0.09)) drop-shadow(0 0 60px rgba(0,0,0,0.6))",
             position: "relative",
             zIndex: 1,
+            borderRadius: "10%"
           }}
         />
       </motion.div>
