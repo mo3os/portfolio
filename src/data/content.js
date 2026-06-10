@@ -14,10 +14,10 @@ export const personal = {
 
 export const skills = [
   { category: "Programming Languages", items: ["Python", "C++", "Java"] },
+  { category: "Data & AI", items: ["Machine Learning", "Data Visualization"] },
   { category: "Frontend", items: ["ReactJS", "HTML", "CSS", "JavaScript"] },
   { category: "Backend & Databases", items: ["Node.js", "Firebase", "SQL", "PHP"] },
-  { category: "Data & AI", items: ["Machine Learning", "Data Visualization"] },
-  { category: "Mobile", items: ["Flutter", "Google Maps API"] },
+  { category: "Mobile", items: ["Flutter"] },
   { category: "Soft Skills", items: ["Problem Solving", "Communication", "Creativity", "Attention to Detail"] },
 ];
 
