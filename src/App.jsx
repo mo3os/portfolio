@@ -21,8 +21,8 @@ export default function App() {
         <Skills />
         <Projects />
         <Experience />
-        <Movies />
         <Contact />
+        <Movies />
         
       </main>
       <footer style={{

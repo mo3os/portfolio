@@ -6,7 +6,7 @@ export default function Hero() {
   const ref = useRef(null);
   const { scrollY } = useScroll();
   const photoOpacity = useTransform(scrollY, [0, 400], [1, 0]);
-  const photoY = useTransform(scrollY, [0, 400], [0, -50]);
+  const photoY = useTransform(scrollY, [0, 400], [0, -40]);
   const letters1 = personal.name.first.split("");
   const letters2 = personal.name.last.split("");
 
@@ -15,19 +15,69 @@ export default function Hero() {
       height: "100vh", display: "flex", flexDirection: "column",
       justifyContent: "center", padding: "0 48px", position: "relative", overflow: "hidden",
     }}>
-      {/* Photo */}
+
+      {/* PNG photo — transparent background, bottom-anchored */}
       <motion.div style={{
-        position: "absolute", top: 0, right: 0, width: "40%", height: "100%",
-        opacity: photoOpacity, y: photoY, pointerEvents: "none", zIndex: 1,
+        position: "absolute",
+        bottom: 0,
+        right: "2%",
+        width: "clamp(320px, 38vw, 580px)",
+        height: "92%",
+        opacity: photoOpacity,
+        y: photoY,
+        pointerEvents: "none",
+        zIndex: 1,
+        display: "flex",
+        alignItems: "flex-end",
+        justifyContent: "center",
       }}>
-        <img src="/photo.webp" alt="Mohamed Essam" style={{
-          width: "100%", height: "100%", objectFit: "cover", objectPosition: "center top",
-          filter: "grayscale(100%) contrast(1.1) brightness(0.7)",
-        }} />
+        {/* Subtle neon ground glow under feet */}
         <div style={{
-          position: "absolute", inset: 0,
-          background: "linear-gradient(to right, #030303 0%, #030303 6%, rgba(3,3,3,0.5) 45%, transparent 100%), linear-gradient(to top, #030303 0%, transparent 22%)",
+          position: "absolute",
+          bottom: 0,
+          left: "50%",
+          transform: "translateX(-50%)",
+          width: "70%",
+          height: 120,
+          background: "radial-gradient(ellipse at center bottom, rgba(80,255,32,0.13) 0%, transparent 70%)",
+          pointerEvents: "none",
         }} />
+
+        {/* Faint neon scan line on photo */}
+        <div style={{
+          position: "absolute",
+          inset: 0,
+          background: "linear-gradient(to left, transparent 0%, rgba(6,8,16,0.18) 85%, rgba(6,8,16,0.7) 100%)",
+          zIndex: 2,
+          pointerEvents: "none",
+        }} />
+
+        {/* Bottom fade so feet blend into page */}
+        <div style={{
+          position: "absolute",
+          bottom: 0,
+          left: 0,
+          right: 0,
+          height: "22%",
+          background: "linear-gradient(to top, #060810 0%, transparent 100%)",
+          zIndex: 3,
+          pointerEvents: "none",
+        }} />
+
+        <img
+          src="/IMG_5973-Photoroom_png-Photoroom.png"
+          alt="Mohamed Essam"
+          style={{
+            width: "100%",
+            height: "100%",
+            objectFit: "contain",
+            objectPosition: "bottom center",
+            /* no grayscale — let the blue suit show against the dark bg */
+            filter: "brightness(0.92) contrast(1.05) drop-shadow(0 0 28px rgba(80,255,32,0.09)) drop-shadow(0 0 60px rgba(0,0,0,0.6))",
+            position: "relative",
+            zIndex: 1,
+          }}
+        />
       </motion.div>
 
       {/* Content */}
@@ -35,7 +85,7 @@ export default function Hero() {
         <motion.div initial={{ opacity: 0, x: -12 }} animate={{ opacity: 1, x: 0 }}
           transition={{ delay: 0.1, duration: 0.6 }}
           style={{ fontFamily: "'Share Tech Mono', monospace", fontSize: 11, letterSpacing: "0.22em", marginBottom: 28 }}>
-          <span style={{ color: "#39ff14", textShadow: "0 0 8px #39ff14" }}>▶ </span>
+          <span style={{ color: "#50ff20", textShadow: "0 0 10px #50ff20" }}>▶ </span>
           <span style={{ color: "#555" }}>SOFTWARE_ENGINEER.exe</span>
           <BlinkCursor />
         </motion.div>
@@ -49,8 +99,7 @@ export default function Hero() {
             {letters1.map((l, i) => (
               <motion.span key={i} initial={{ y: "110%" }} animate={{ y: 0 }}
                 transition={{ duration: 0.75, delay: 0.25 + i * 0.05, ease: [0.16, 1, 0.3, 1] }}
-                style={{ display: "inline-block",
-                  textShadow: "0 0 20px rgba(57,255,20,0.15)" }}>
+                style={{ display: "inline-block", textShadow: "0 0 22px rgba(80,255,32,0.18)" }}>
                 {l}
               </motion.span>
             ))}
@@ -68,13 +117,13 @@ export default function Hero() {
 
         <motion.div initial={{ scaleX: 0, originX: 0 }} animate={{ scaleX: 1 }}
           transition={{ duration: 1, delay: 0.9, ease: [0.25, 0.46, 0.45, 0.94] }}
-          style={{ height: 1, background: "linear-gradient(to right, #39ff1433, transparent)", margin: "28px 0" }} />
+          style={{ height: 1, background: "linear-gradient(to right, #50ff2044, transparent)", margin: "28px 0" }} />
 
         <motion.div initial={{ opacity: 0, y: 8 }} animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 1.1 }}
           style={{ display: "flex", flexDirection: "column", gap: 6 }}>
-          <span style={{ color: "#39ff14", fontSize: 12, letterSpacing: "0.25em", textTransform: "uppercase",
-            textShadow: "0 0 8px #39ff14", fontFamily: "'Share Tech Mono', monospace" }}>
+          <span style={{ color: "#50ff20", fontSize: 12, letterSpacing: "0.25em", textTransform: "uppercase",
+            textShadow: "0 0 10px #50ff20", fontFamily: "'Share Tech Mono', monospace" }}>
             &gt; On Duty
           </span>
           <span style={{ fontSize: 12, letterSpacing: "0.22em", textTransform: "uppercase", color: "#777",
@@ -91,7 +140,7 @@ export default function Hero() {
           display: "flex", alignItems: "center", gap: 14,
           fontFamily: "'Share Tech Mono', monospace",
           fontSize: 10, letterSpacing: "0.22em", textTransform: "uppercase",
-          color: "#39ff14", textShadow: "0 0 8px #39ff14",
+          color: "#50ff20", textShadow: "0 0 10px #50ff20",
         }}>
         <ScrollLine /> SCROLL
       </motion.div>
@@ -109,12 +158,12 @@ export default function Hero() {
 function BlinkCursor() {
   const [on, setOn] = useState(true);
   useEffect(() => { const t = setInterval(() => setOn(v => !v), 530); return () => clearInterval(t); }, []);
-  return <span style={{ color: "#39ff14", textShadow: "0 0 8px #39ff14", opacity: on ? 1 : 0, transition: "opacity 0.1s" }}>_</span>;
+  return <span style={{ color: "#50ff20", textShadow: "0 0 10px #50ff20", opacity: on ? 1 : 0, transition: "opacity 0.1s" }}>_</span>;
 }
 
 function ScrollLine() {
   const [w, setW] = useState(36);
   useEffect(() => { const t = setInterval(() => setW(w => w === 36 ? 56 : 36), 900); return () => clearInterval(t); }, []);
-  return <div style={{ height: 1, background: "#39ff14", width: w, transition: "width 0.9s ease",
-    boxShadow: "0 0 6px #39ff14" }} />;
+  return <div style={{ height: 1, background: "#50ff20", width: w, transition: "width 0.9s ease",
+    boxShadow: "0 0 8px #50ff20" }} />;
 }
