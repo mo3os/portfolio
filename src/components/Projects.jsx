@@ -5,25 +5,25 @@ import SectionLabel from "./SectionLabel";
 
 const PROJECT_PHOTOS = {
   "01": [
-    { img: "/dogh2.jpeg", caption: "Map view & route planning" },
-    { img: "/dogh1.jpeg", caption: "Select A Trip" },
-    { img: "/dogh6.jpeg", caption: "Selecting Bus" },
-    { img: "/dogh3.jpeg", caption: "Selecting Class" },
-    { img: "/dogh4.jpeg", caption: "Payment Page" },
-    { img: "/dogh5.jpeg", caption: "After Payment" },
-    { img: "/dogh7.jpeg", caption: "Profile Page" },
+    { src: "/dogh2.jpeg", caption: "Map view & route planning" },
+    { src: "https://imgur.com/a/FxDslfY", caption: "Select A Trip" },
+    { src: "/dogh6.jpeg", caption: "Selecting Bus" },
+    { src: "/dogh3.jpeg", caption: "Selecting Class" },
+    { src: "/dogh4.jpeg", caption: "Payment Page" },
+    { src: "/dogh5.jpeg", caption: "After Payment" },
+    { src: "/dogh7.jpeg", caption: "Profile Page" },
   ],
   "02": [
-    { img: "/dawar1.png", caption: "Homepage" },
-    { img: "/dawar6.png", caption: "Homepage Recoloring" },
-    { img: "/dawar2.png", caption: "Login Page" },
-    { img: "/dawar3.png", caption: "Cars Category" },
-    { img: "/dawar5.png", caption: "Car Selection" },
-    { img: "/dawar7.png", caption: "Cart Option" },
-    { img: "/dawar4.png", caption: "Checkout Page" },
+    { src: "/dawar1.png", caption: "Homepage" },
+    { src: "/dawar6.png", caption: "Homepage Recoloring" },
+    { src: "/dawar2.png", caption: "Login Page" },
+    { src: "/dawar3.png", caption: "Cars Category" },
+    { src: "/dawar5.png", caption: "Car Selection" },
+    { src: "/dawar7.png", caption: "Cart Option" },
+    { src: "/dawar4.png", caption: "Checkout Page" },
   ],
   "03": [
-    { img: "/food1.png", caption: "Food Order Panel + Admin Panel" }
+    { src: "/food1.png", caption: "Food Order Panel + Admin Panel" }
   ],
 };
 
