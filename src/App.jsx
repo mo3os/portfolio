@@ -5,8 +5,8 @@ import About from "./components/About";
 import Skills from "./components/Skills";
 import Projects from "./components/Projects";
 import Experience from "./components/Experience";
-import Movies from "./components/Movies";
 import Contact from "./components/Contact";
+import Movies from "./components/Movies";
 import RetroBackground from "./components/RetroBackground";
 
 export default function App() {

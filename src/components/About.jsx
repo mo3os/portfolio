@@ -34,6 +34,7 @@ export default function About() {
         </FadeIn>
       </div>
       <style>{`@media(max-width:768px){ #about > div { grid-template-columns: 1fr !important; gap: 48px !important; } }`}</style>
+      
     </section>
   );
 }

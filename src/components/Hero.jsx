@@ -69,7 +69,7 @@ export default function Hero() {
           alt="Mohamed Essam"
           style={{
             width: "100%",
-            height: "90%",
+            height: "97%",
             objectFit: "cover",
             objectPosition: "bottom center",
             filter: "brightness(0.92) contrast(1.05) drop-shadow(0 0 28px rgba(80,255,32,0.09)) drop-shadow(0 0 60px rgba(0,0,0,0.6))",
@@ -148,8 +148,8 @@ export default function Hero() {
       <motion.span initial={{ opacity: 0 }} animate={{ opacity: 1 }}
         transition={{ delay: 1.7 }}
         style={{ position: "absolute", bottom: 42, right: 48,
-          fontFamily: "'Share Tech Mono', monospace", fontSize: 10, letterSpacing: "0.2em", color: "#333" }}>
-        v2025.1
+          fontFamily: "'Share Tech Mono', monospace", fontSize: 10, letterSpacing: "0.2em", color: "#05cdff" }}>
+        vvv
       </motion.span>
     </section>
   );

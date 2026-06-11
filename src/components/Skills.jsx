@@ -78,12 +78,30 @@ const ICONS = {
       <path d="M8 10v4M8 12h3c1 0 1.5-.5 1.5-1s-.5-1-1.5-1H8M14 10l-1 4M14 10h2c1 0 1.5.5 1.5 1s-.5 1-1.5 1h-2l-.5 2" stroke="#8892BF" strokeWidth="1" fill="none" strokeLinecap="round"/>
     </svg>
   ),
-  Flutter: (
-    <svg viewBox="0 0 24 24" width="22" height="22" fill="none">
-      <path d="M14 2L3 13l3 3 11-11-3-3z" stroke="#54C5F8" strokeWidth="1.5" fill="none" strokeLinejoin="round"/>
-      <path d="M7 16l4 4h6l-7-7-3 3z" stroke="#01579B" strokeWidth="1.5" fill="none" strokeLinejoin="round"/>
-    </svg>
-  ),
+Git: (
+  <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
+    <path d="M23.56 10.93L13.07.44a1.5 1.5 0 0 0-2.12 0L8.77 2.62l2.77 2.77a1.78 1.78 0 0 1 2.25 2.27l2.67 2.67a1.78 1.78 0 1 1-1.07 1.01l-2.49-2.49v6.56a1.78 1.78 0 1 1-1.46 0V8.79a1.78 1.78 0 0 1-.97-2.34L9.75 3.73.44 13.05a1.5 1.5 0 0 0 0 2.12l10.49 10.49a1.5 1.5 0 0 0 2.12 0l10.51-10.51a1.5 1.5 0 0 0 0-2.12Z"/>
+  </svg>
+),
+Vercel: (
+  <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
+    <path d="M12 3L22 21H2L12 3Z" />
+  </svg>
+),
+Figma: (
+  <svg viewBox="0 0 24 24" width="22" height="22" fill="none">
+    <path d="M9 2a3 3 0 0 0 0 6h3V2H9z" fill="#F24E1E"/>
+    <path d="M12 2h3a3 3 0 1 1 0 6h-3V2z" fill="#A259FF"/>
+    <path d="M12 8h3a3 3 0 1 1 0 6h-3V8z" fill="#1ABCFE"/>
+    <path d="M9 8h3v6H9a3 3 0 0 1 0-6z" fill="#0ACF83"/>
+    <path d="M9 14h3v3a3 3 0 1 1-3-3z" fill="#FF7262"/>
+  </svg>
+),
+Canva: (
+  <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
+    <path d="M12 4C7.6 4 4 7.4 4 11.8 4 16.4 7.6 20 12 20c2.8 0 5.1-1.3 6.5-3.3l-1.8-1.2c-1 1.4-2.6 2.2-4.7 2.2-3.1 0-5.5-2.5-5.5-5.8 0-3.2 2.4-5.7 5.5-5.7 2.1 0 3.7.9 4.7 2.3l1.8-1.3C17.1 5.3 14.8 4 12 4Z" />
+  </svg>
+),
   "Machine Learning": (
     <svg viewBox="0 0 24 24" width="22" height="22" fill="none">
       <circle cx="12" cy="12" r="3" stroke="#FF6B6B" strokeWidth="1.5" fill="none"/>
@@ -108,9 +126,8 @@ const ICONS = {
 };
 
 const DEFAULT_ICON = (
-  <svg viewBox="0 0 24 24" width="22" height="22" fill="none">
-    <rect x="3" y="3" width="18" height="18" rx="3" stroke="#39ff14" strokeWidth="1.5" fill="none"/>
-    <path d="M8 12h8M12 8v8" stroke="#39ff14" strokeWidth="1.5" strokeLinecap="round"/>
+  <svg viewBox="0 0 24 24" width="22" height="22" fill="#ffef14">
+    <path d="M12 2L13.8 8.2L20 10L13.8 11.8L12 18L10.2 11.8L4 10L10.2 8.2L12 2Z" />
   </svg>
 );
 

@@ -2,12 +2,18 @@ import { useState } from "react";
 import { experience, education, certificates } from "../data/content";
 import SectionLabel from "./SectionLabel";
 import FadeIn from "./FadeIn";
-
+const CAREER_STATS = [
+  { label: "PROJECTS ", value: "4+", icon: "projects" },
+  { label: "TECHNOLOGIES", value: "10+", icon: "tech" },
+  { label: "CERTIFICATES", value: "3+", icon: "certs" },
+  { label: "YEARS LEARNING", value: "2", icon: "learning" },
+];
 export default function Experience() {
   return (
     <>
       <section id="experience" style={{ padding: "100px 48px" }}>
-        <SectionLabel>Work Experience</SectionLabel>
+  <CareerStatsBar />
+  <SectionLabel>Work Experience</SectionLabel>
         <div style={{ borderTop: "1px solid #111" }}>
           {experience.map((e, i) => <FadeIn key={i} delay={i * 0.08}><TimelineRow period={e.period} title={e.role} sub={e.company} desc={e.description} /></FadeIn>)}
         </div>
@@ -26,6 +32,138 @@ export default function Experience() {
         <style>{`@media(max-width:768px){ #certificates > div { grid-template-columns: 1fr !important; } }`}</style>
       </section>
     </>
+  );
+}
+
+function StatIcon({ type }) {
+  const common = {
+    width: 18,
+    height: 18,
+    viewBox: "0 0 24 24",
+    fill: "none",
+    stroke: "currentColor",
+    strokeWidth: 1.7,
+    strokeLinecap: "round",
+    strokeLinejoin: "round",
+  };
+
+  switch (type) {
+    case "projects":
+      return (
+        <svg {...common}>
+          <path d="M8 3H5a2 2 0 0 0-2 2v3" />
+          <path d="M16 3h3a2 2 0 0 1 2 2v3" />
+          <path d="M8 21H5a2 2 0 0 1-2-2v-3" />
+          <path d="M16 21h3a2 2 0 0 0 2-2v-3" />
+          <path d="M9 9h6v6H9z" />
+        </svg>
+      );
+
+    case "tech":
+      return (
+        <svg {...common}>
+          <path d="M12 2v4" />
+          <path d="M12 18v4" />
+          <path d="M2 12h4" />
+          <path d="M18 12h4" />
+          <circle cx="12" cy="12" r="4" />
+        </svg>
+      );
+
+    case "certs":
+      return (
+        <svg {...common}>
+          <circle cx="12" cy="8" r="4" />
+          <path d="M9 12v8l3-2 3 2v-8" />
+        </svg>
+      );
+
+    case "learning":
+      return (
+        <svg {...common}>
+          <path d="M4 6h8a3 3 0 0 1 3 3v9H7a3 3 0 0 0-3 3z" />
+          <path d="M20 6h-8a3 3 0 0 0-3 3" />
+        </svg>
+      );
+
+    default:
+      return null;
+  }
+}
+
+function CareerStatsBar() {
+  return (
+    <div
+      style={{
+        display: "grid",
+        gridTemplateColumns: "repeat(4, 1fr)",
+        marginBottom: 80,
+        borderTop: "1px solid #111",
+        borderBottom: "1px solid #111",
+        background: "rgba(255,255,255,0.01)",
+      }}
+    >
+      {CAREER_STATS.map((s, i) => (
+        <CareerStatCell
+          key={i}
+          stat={s}
+          last={i === CAREER_STATS.length - 1}
+        />
+      ))}
+    </div>
+  );
+}
+
+function CareerStatCell({ stat, last }) {
+  const [hovered, setHovered] = useState(false);
+
+  return (
+    <div
+      onMouseEnter={() => setHovered(true)}
+      onMouseLeave={() => setHovered(false)}
+      style={{
+        padding: "28px 24px",
+        borderRight: last ? "none" : "1px solid #08efff23",
+        background: hovered
+          ? "rgba(0, 153, 255, 0.03)"
+          : "transparent",
+        transition: "all .3s ease",
+      }}
+    >
+      <div
+        style={{
+          fontSize: 18,
+          marginBottom: 12,
+          color: hovered ? "#20ffec" : "#777",
+        }}
+      >
+      <StatIcon type={stat.icon} />
+      </div>
+
+      <div
+        style={{
+          fontFamily: "'Space Grotesk', sans-serif",
+          fontSize: 28,
+          fontWeight: 700,
+          color: hovered ? "#20ffec" : "#ffffff",
+        }}
+      >
+        {stat.value}
+      </div>
+
+      <div
+        style={{
+          marginTop: 8,
+          fontFamily: "'Share Tech Mono', monospace",
+          fontSize: 12,
+          letterSpacing: "0.22em",
+          textTransform: "uppercase",
+          color: "#ffffff",
+        }}
+      >
+        {stat.label}
+      </div>
+    </div>
   );
 }
 
@@ -60,3 +198,5 @@ function CertCard({ cert }) {
     </div>
   );
 }
+
+
